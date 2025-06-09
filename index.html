@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GPA Calculator | Group 16</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>JavaScript GPA Calculator</h1>
+  </header>
+
+  <main>
+    <!-- === Add Assignment Form === -->
+    <section>
+      <h2>Add Assignment</h2>
+      <form id="entry-form" autocomplete="off">
+        <label>
+          Assignment name
+          <input id="assignment-name" type="text" required />
+        </label>
+
+        <label>
+          Grade (0 – 5)
+          <input id="assignment-grade" type="number" min="0" max="5" step="0.1" required />
+        </label>
+
+        <button type="submit">Add</button>
+      </form>
+    </section>
+
+    <!-- === GPA Display === -->
+    <section>
+      <h2>Current GPA</h2>
+      <p id="gpa-value">—</p>
+    </section>
+
+    <!-- === Entries List === -->
+    <section>
+      <h2>Assignments Entered</h2>
+      <ul id="entries-list"></ul>
+    </section>
+  </main>
+
+  <!-- Core Javascript logic -->
+  <script src="script.js" defer></script>
+</body>
+</html>
