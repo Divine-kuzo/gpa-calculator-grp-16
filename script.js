@@ -15,7 +15,7 @@ form.addEventListener('submit', function (event) {
   const name = nameInput.value.trim();
   const grade = parseFloat(gradeInput.value);
 
-   // Validate input
+  // Validate input
   if (!name || isNaN(grade) || grade < 0 || grade > 5) {
     alert('Please enter a valid assignment name and a grade between 0 and 5.');
     return;
@@ -77,4 +77,3 @@ document.addEventListener('keydown', (event) => {
     console.log('All Assignments:', assignments);
   }
 });
-
